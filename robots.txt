@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+
+Host: https://affordiahealth.com
+Sitemap: https://affordiahealth.com/sitemap.xml
