@@ -1,0 +1,5 @@
+1:"$Sreact.fragment"
+2:I[39756,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js"],"default"]
+3:I[37457,["/_next/static/chunks/0fsi8lw5utejl.js","/_next/static/chunks/0d3tkj33oycf2.js"],"default"]
+:HL["/_next/static/chunks/12it8geunoqkg.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/chunks/12it8geunoqkg.css","precedence":"next"}],["$","script","script-0",{"src":"/_next/static/chunks/0k6kr~ze-.qya.js","async":true}]],["$","html",null,{"lang":"es","children":["$","body",null,{"className":"geist_1c645009-module__5fZB7q__variable geist_mono_9d00310-module__N4lbla__variable antialiased","children":[["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}],["$","script",null,{"async":true,"type":"module","src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\":\"f0205897117b464ca80e1c8dda859654\"}"}]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"Nk3nI0WPhbP4cfswT2eNp"}

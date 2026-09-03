@@ -1,242 +1,1602 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <url>
 <loc>https://affordiahealth.com/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>weekly</changefreq>
+<priority>1</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>weekly</changefreq>
 <priority>1</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/services/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/how-it-works/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/how-it-works/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/how-it-works/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/how-it-works/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/why-china/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/why-china/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/why-china/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/why-china/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/affordia-care/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/affordia-care/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/affordia-care/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/affordia-care/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/partner-network/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/partner-network/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/partner-network/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/partner-network/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/about-us/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/about-us/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/about-us/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/about-us/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/pricing/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/faq/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/faq/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/faq/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/faq/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/faq/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/faq/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/faq/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/faq/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/faq/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/faq/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/faq/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/faq/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/faq/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/faq/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/faq/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/faq/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/faq/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/faq/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/faq/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/faq/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/contact/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/terms-and-conditions/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/terms-and-conditions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/terms-and-conditions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/terms-and-conditions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/data-protection-medical-privacy/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/data-protection-medical-privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/data-protection-medical-privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/data-protection-medical-privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/cancellation-refund-policy/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/cancellation-refund-policy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/cancellation-refund-policy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/cancellation-refund-policy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/medical-responsibility-liability/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/medical-responsibility-liability/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/medical-responsibility-liability/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/medical-responsibility-liability/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/book-a-free-consultation/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/book-a-free-consultation/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/book-a-free-consultation/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.8</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/book-a-free-consultation/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.8</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.7</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/about-us/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/about-us/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/about-us/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/about-us/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/about-us/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/about-us/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/affordia-care/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/affordia-care/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/affordia-care/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/affordia-care/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-care/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-care/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/affordia-health/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-health/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/affordia-health/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-health/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/affordia-health/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-health/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/affordia-health/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/affordia-health/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/affordia-health/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/contact/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/contact/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/contact/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/contact/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/contact/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/contact/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/slogan/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/slogan/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/slogan/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/slogan/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/slogan/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/slogan/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/slogan/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/slogan/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/slogan/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/aftercare-recovery/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/aftercare-recovery/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/aftercare-recovery/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/aftercare-recovery/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/aftercare-recovery/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/aftercare-recovery/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/aftercare-recovery/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/aftercare-recovery/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/aftercare-recovery/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/book-a-free-consultation/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/book-a-free-consultation/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/book-a-free-consultation/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/book-a-free-consultation/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/book-a-free-consultation/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/book-a-free-consultation/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/frequently-asked-questions/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/frequently-asked-questions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/frequently-asked-questions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/frequently-asked-questions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/frequently-asked-questions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/frequently-asked-questions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/frequently-asked-questions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/frequently-asked-questions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/frequently-asked-questions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/how-it-works/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/how-it-works/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/how-it-works/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/how-it-works/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/how-it-works/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/how-it-works/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/our-services/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/our-services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/our-services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/our-services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/our-services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/our-services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/our-services/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/our-services/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/our-services/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/payment-coverage-options/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/payment-coverage-options/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/payment-coverage-options/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/payment-coverage-options/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/payment-coverage-options/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/payment-coverage-options/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/payment-coverage-options/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/payment-coverage-options/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/payment-coverage-options/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/pricing/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/pricing/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/pricing/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/pricing/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/why-china/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/why-china/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/why-china/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/why-china/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/why-china/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/why-china/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/cancellation-refund-policy/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/cancellation-refund-policy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/cancellation-refund-policy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/cancellation-refund-policy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/cancellation-refund-policy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/cancellation-refund-policy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/client-feedback-complaints/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/client-feedback-complaints/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/client-feedback-complaints/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/client-feedback-complaints/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/client-feedback-complaints/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/client-feedback-complaints/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/client-feedback-complaints/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/client-feedback-complaints/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/client-feedback-complaints/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/data-protection-medical-privacy/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/data-protection-medical-privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/data-protection-medical-privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/data-protection-medical-privacy/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/data-protection-medical-privacy/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/data-protection-medical-privacy/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/limitation-responsibility-medical-journey-outcomes/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/limitation-responsibility-medical-journey-outcomes/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/limitation-responsibility-medical-journey-outcomes/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/limitation-responsibility-medical-journey-outcomes/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/limitation-responsibility-medical-journey-outcomes/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/limitation-responsibility-medical-journey-outcomes/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/limitation-responsibility-medical-journey-outcomes/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/limitation-responsibility-medical-journey-outcomes/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/limitation-responsibility-medical-journey-outcomes/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/medical-responsibility-liability/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/medical-responsibility-liability/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/medical-responsibility-liability/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/medical-responsibility-liability/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/medical-responsibility-liability/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/medical-responsibility-liability/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/terms-and-conditions/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/terms-and-conditions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/terms-and-conditions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/terms-and-conditions/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/terms-and-conditions/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/terms-and-conditions/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/become-a-partner/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/become-a-partner/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/become-a-partner/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/become-a-partner/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/become-a-partner/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/become-a-partner/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/become-a-partner/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/become-a-partner/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/become-a-partner/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/healthcare-partners/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/healthcare-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/healthcare-partners/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/healthcare-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/healthcare-partners/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/healthcare-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/healthcare-partners/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/healthcare-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/healthcare-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/insurance-coverage-partners/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/insurance-coverage-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/insurance-coverage-partners/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/insurance-coverage-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/insurance-coverage-partners/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/insurance-coverage-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/insurance-coverage-partners/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/insurance-coverage-partners/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/insurance-coverage-partners/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/partner-network/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/partner-network/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/partner-network/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/partner-network/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/partner-network/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/partner-network/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
 <url>
 <loc>https://affordiahealth.com/library/referral-program/</loc>
-<lastmod>2026-09-02T00:00:00.000Z</lastmod>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/referral-program/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/de/library/referral-program/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/referral-program/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/es/library/referral-program/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/referral-program/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.6</priority>
+</url>
+<url>
+<loc>https://affordiahealth.com/zh-CN/library/referral-program/</loc>
+<xhtml:link rel="alternate" hreflang="en" href="https://affordiahealth.com/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="de" href="https://affordiahealth.com/de/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="es" href="https://affordiahealth.com/es/library/referral-program/" />
+<xhtml:link rel="alternate" hreflang="zh-CN" href="https://affordiahealth.com/zh-CN/library/referral-program/" />
+<lastmod>2026-09-03T00:00:00.000Z</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.6</priority>
 </url>
