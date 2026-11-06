@@ -1,0 +1,13 @@
+# EXAMPLE ONLY: create a separate reviewed configuration for staging.
+# No domain, route, database or account is created by this file.
+name = "affordia-consultation-staging"
+main = "worker.mjs"
+compatibility_date = "2026-11-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "REPLACE_WITH_STAGING_DATABASE"
+database_id = "REPLACE_WITH_STAGING_DATABASE_ID"
+
+[vars]
+SITE_ORIGIN = "https://REPLACE_WITH_STAGING_ORIGIN"
