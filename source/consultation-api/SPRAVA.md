@@ -20,7 +20,7 @@ Stav: **prototyp, nie je pripravený na produkciu**. Úpravy sú uložené v sam
 
 Formulár podporuje meno, krajinu, 12 kategórií, ľubovoľný počet kontaktných spôsobov v rámci limitu veľkosti požiadavky, práve jeden preferovaný kontakt, dve textové polia a potvrdenie prečítania zásad ochrany údajov. Upozorňuje, aby návštevník neposielal diagnózy ani zdravotnú dokumentáciu. Pri nedostupnom serveri nepredstiera úspech a zachováva údaje vo formulári.
 
-Bol pripravený prototyp Cloudflare Worker API s D1, ktorý ukladá údaje zašifrovane, používa krátkodobé tokeny, kontrolu opakovaného odoslania, ochranu proti automatizovaným požiadavkám a e-mailové oznámenie obsahujúce iba referenciu. Existuje chránené technické rozhranie na čítanie a zmazanie žiadosti, zatiaľ však chýba dokončené používateľské administrátorské rozhranie a správa individuálnych prístupov.
+Bol pripravený prototyp Cloudflare Worker API s D1, ktorý ukladá údaje zašifrovane, používa krátkodobé tokeny, kontrolu opakovaného odoslania a ochranu proti automatizovaným požiadavkám. Na požiadanie majiteľa pripravuje e-mail s obsahom žiadosti a kontaktnými údajmi pre affordiahealth@gmail.com. Keďže zákazník môže napriek upozorneniu uviesť aj citlivé zdravotné údaje, pred spustením treba posúdiť ochranu, prístup a uchovávanie údajov v schránke. Existuje chránené technické rozhranie na čítanie a zmazanie žiadosti, zatiaľ však chýba dokončené používateľské administrátorské rozhranie a správa individuálnych prístupov.
 
 ## Čo je potrebné pred nasadením
 

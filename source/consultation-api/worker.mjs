@@ -2,6 +2,7 @@
 // the operational, privacy and security acceptance checks in README.md.
 const encoder = new TextEncoder();
 const services = new Set(['medical','eye','aesthetic','plastic','dental','screening','rehabilitation','post-treatment','travel','insurance','other','unsure']);
+const serviceLabels = { medical:'Medical treatment and hospital coordination', eye:'Eye care and vision surgery', aesthetic:'Cosmetic and aesthetic procedures', plastic:'Plastic surgery coordination', dental:'Dental care and implants', screening:'Preventive health screening', rehabilitation:'Rehabilitation and recovery', 'post-treatment':'Post-treatment and post-surgery rehabilitation', travel:'Travel, accommodation and medical logistics', insurance:'Insurance-related administrative assistance', other:'Other healthcare coordination', unsure:'Not sure - help me find the right option' };
 const locales = new Set(['en','de','es','zh-CN']);
 const prefixes = ['30','31','32','33','34','36','39','40','41','43','45','46','48','49','351','352','353','356','357','358','359','370','371','372','385','386','420','421'];
 const headers = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer', 'Content-Security-Policy': "default-src 'none'; frame-ancestors 'none'" };
@@ -43,13 +44,16 @@ async function readToken(env, value, now) {
   if (!payload || !signature || extra || !(await verify(env.TOKEN_SECRET, payload, signature))) return null;
   try { const token = JSON.parse(new TextDecoder().decode(unb64(payload))); return typeof token.id === 'string' && Number.isInteger(token.issued) && token.issued <= now + 30000 && token.expires >= now && token.expires - token.issued === 7200000 ? token : null; } catch { return null; }
 }
-async function notify(env, reference) {
+async function notify(env, reference, record) {
   try {
     const params = new URLSearchParams({client_id:env.GMAIL_CLIENT_ID,client_secret:env.GMAIL_CLIENT_SECRET,refresh_token:env.GMAIL_REFRESH_TOKEN,grant_type:'refresh_token'});
     const tokenResponse = await fetch('https://oauth2.googleapis.com/token', {method:'POST',redirect:'error',signal:AbortSignal.timeout(10000),headers:{'Content-Type':'application/x-www-form-urlencoded'},body:params.toString()});
     if (!tokenResponse.ok) return false;
     const token = await tokenResponse.json(); if (typeof token.access_token !== 'string') return false;
-    const raw = b64(encoder.encode(`To: affordiahealth@gmail.com\r\nSubject: New Affordia Health consultation request\r\nContent-Type: text/plain; charset=UTF-8\r\n\r\nA consultation request was recorded.\r\nReference: ${reference}\r\nOpen the protected administration system to review the request.\r\n`));
+    const contactLines = record.contacts.map((c, i) => `${i + 1}. ${c.type}${c.preferred ? ' (preferred)' : ''}: ${c.value}`).join('\r\n');
+    const message = `A consultation request was recorded.\r\nReference: ${reference}\r\n\r\nName: ${record.name}\r\nCountry: ${record.country}\r\nService: ${serviceLabels[record.service]}\r\nLanguage: ${record.locale}\r\n\r\nContact methods:\r\n${contactLines}\r\n\r\nHow can we help?\r\n${record.help || '(not provided)'}\r\n\r\nQuestions:\r\n${record.questions || '(not provided)'}\r\n\r\nPrivacy notice acknowledged: Yes\r\n`;
+    const messageBase64 = btoa(String.fromCharCode(...encoder.encode(message))).match(/.{1,76}/g)?.join('\r\n') || '';
+    const raw = b64(encoder.encode(`To: affordiahealth@gmail.com\r\nSubject: New Affordia Health consultation request\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n${messageBase64}\r\n`));
     const response = await fetch('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', { method:'POST', redirect:'error', signal:AbortSignal.timeout(10000), headers:{ 'Content-Type':'application/json', 'Authorization':`Bearer ${token.access_token}` }, body:JSON.stringify({ raw }) });
     return response.ok;
   } catch { return false; }
@@ -119,7 +123,7 @@ async function handle(request, env) {
     env.DB.prepare('INSERT INTO requests(reference,idempotency_key,payload_hash,token_id,encrypted_payload,iv,created_at,suspicious,notification) VALUES(?,?,?,?,?,?,?,?,?)').bind(reference,idem,hash,token.id,b64(new Uint8Array(encrypted)),b64(iv),now,now-token.issued<1500?1:0,'pending')
   ]); }
   catch { const duplicate=await env.DB.prepare('SELECT reference,payload_hash,notification FROM requests WHERE idempotency_key=?').bind(idem).first(); return duplicate && duplicate.payload_hash===hash ? reply({reference:duplicate.reference,notification:duplicate.notification}) : reply({error:'verification_failed'},403); }
-  const sent=await notify(env,reference); const notification=sent?'sent':'failed';
+  const sent=await notify(env,reference,record); const notification=sent?'sent':'failed';
   await env.DB.prepare('UPDATE requests SET notification=? WHERE reference=?').bind(notification,reference).run();
   return reply({reference,notification},201);
 }

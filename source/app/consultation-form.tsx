@@ -93,6 +93,7 @@ export function ConsultationContact({ locale }: { copy: Record<string, string>; 
       <p>{t.prompts}</p>
       <label>{t.help} ({t.optional})<textarea maxLength={6000} value={help} onChange={e => setHelp(e.target.value)} /></label>
       <label>{t.questions} ({t.optional})<textarea maxLength={6000} value={questions} onChange={e => setQuestions(e.target.value)} /></label>
+      <p>{t.emailNotice}</p>
       <div className="inline-check"><input id={`privacy-${locale}`} type="checkbox" required aria-invalid={attempted && !privacy} checked={privacy} onChange={e => setPrivacy(e.target.checked)} /> <label htmlFor={`privacy-${locale}`}>{t.privacy} *</label></div>
       <a className="privacy-link" href={localizePath(locale, '/data-protection-medical-privacy')} target="_blank" rel="noopener noreferrer">{t.privacyLink}</a>
       <div className="honeypot" aria-hidden="true"><label>Website<input name="website" tabIndex={-1} autoComplete="off" value={website} onChange={e => setWebsite(e.target.value)} /></label></div>
