@@ -349,3 +349,9 @@ main { min-height: 100vh; padding: 18px clamp(16px, 2.5vw, 34px) 34px; }
 .consultation-form .privacy-link { text-decoration: underline; }
 .consultation-form .honeypot { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
 @media (max-width: 520px) { .consultation-form .button { width: 100%; } }
+.local-coordination { margin: 3rem auto; max-width: 1200px; padding: clamp(1.5rem, 4vw, 3rem); background: #edf7f6; border-radius: 24px; color: #073f47; }
+.local-coordination h2 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; }
+.local-coordination h3 { margin-top: 1.75rem; font-size: 1.35rem; }
+.local-coordination p, .local-coordination li { max-width: 80ch; line-height: 1.65; }
+.local-coordination ol { padding-inline-start: 1.5rem; }
+.local-coordination .button { margin-top: 1rem; }

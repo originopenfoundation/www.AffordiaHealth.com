@@ -18,18 +18,18 @@ async function post(body, key=crypto.randomUUID(), ip='203.0.113.9', origin='htt
   return {status:response.status,body:await response.json()};
 }
 try {
-  const first={...base(),token:await token()}; const key=crypto.randomUUID();
+  const first={...base(),priority:'balance',budget:'5000 EUR',budgetScope:'journey',insurance:'unsure',token:await token()}; const key=crypto.randomUUID();
   const a=await post(first,key); assert.equal(a.status,201); assert.equal(a.body.notification,'sent');
   assert(notifications[0].includes('To: affordiahealth@gmail.com'));
   const message=Buffer.from(notifications[0].split('\r\n\r\n')[1].replace(/\r\n/g,''),'base64').toString('utf8');
-  for(const value of [a.body.reference, first.name, first.country, 'Eye care and vision surgery', first.contacts[0].value, first.contacts[1].value, '(preferred)', first.help, first.questions, 'Privacy notice acknowledged: Yes']) assert(message.includes(value), `Missing email content: ${value}`);
+  for(const value of [a.body.reference, first.name, first.country, 'Eye care and vision surgery', first.contacts[0].value, first.contacts[1].value, '(preferred)', first.help, first.questions, first.priority, first.budget, first.budgetScope, first.insurance, 'Privacy notice acknowledged: Yes']) assert(message.includes(value), `Missing email content: ${value}`);
   const duplicate=await post(first,key); assert.equal(duplicate.status,200); assert.equal(duplicate.body.reference,a.body.reference); assert.equal(notifications.length,1);
   assert.equal((await post({...first,help:'Changed'},key)).status,409);
   assert.equal((await post(first)).status,403); // token replay with a different idempotency key
   const stored=sqlite.prepare('SELECT * FROM requests WHERE reference=?').get(a.body.reference);
   assert(!stored.encrypted_payload.includes('Example Person')); assert.equal(stored.suspicious,1); // Fast completion is flagged, not rejected.
   const admin=await worker.fetch(new Request(`https://affordiahealth.com/api/admin/requests/${a.body.reference}`,{headers:{Authorization:`Bearer ${env.ADMIN_TOKEN}`,'CF-Connecting-IP':'203.0.113.9'}}),env);
-  assert.equal(admin.status,200); assert.equal((await admin.json()).request.contacts.length,2);
+  assert.equal(admin.status,200); const saved=(await admin.json()).request; assert.equal(saved.contacts.length,2); for(const field of ['priority','budget','budgetScope','insurance']) assert.equal(saved[field],first[field]);
   const unauthorized=await worker.fetch(new Request(`https://affordiahealth.com/api/admin/requests/${a.body.reference}`,{headers:{'CF-Connecting-IP':'203.0.113.9'}}),env); assert.equal(unauthorized.status,401);
   const deleted=await worker.fetch(new Request(`https://affordiahealth.com/api/admin/requests/${a.body.reference}`,{method:'DELETE',headers:{Authorization:`Bearer ${env.ADMIN_TOKEN}`,'CF-Connecting-IP':'203.0.113.9'}}),env); assert.equal(deleted.status,200);
   assert.equal((await post(first)).status,403); // Deleting the record must not make its form token reusable.
@@ -44,6 +44,10 @@ try {
   const unsure={...base(),service:'unsure',help:'Please help me find an option',token:await token()}; assert.equal((await post(unsure)).status,201);
   assert.equal((await post({...base(),website:'spam',token:await token()})).status,403);
   assert.equal((await post({...base(),contacts:[],token:await token()})).status,400);
+  const beforeEmpty=sqlite.prepare('SELECT count(*) AS n FROM requests').get().n;
+  assert.equal((await post({token:await token()})).status,400);
+  assert.equal(sqlite.prepare('SELECT count(*) AS n FROM requests').get().n,beforeEmpty);
+  assert.equal((await post({...base(),priority:'invented',token:await token()})).status,400);
   assert.equal((await post({...base(),token:await token()},crypto.randomUUID(),'203.0.113.9','https://evil.example')).status,403);
   assert.equal((await post({...base(),help:'x'.repeat(70000),token:await token()})).status,413);
   failNotification=true; const failed=await post({...base(),token:await token()}); assert.equal(failed.status,201); assert.equal(failed.body.notification,'failed');

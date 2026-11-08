@@ -3,6 +3,7 @@ import { localizePath, type Locale } from './i18n/locale';
 import Image from 'next/image';
 import { CtaBand, SiteFooter, SiteHeader } from './site-components';
 import { canonicalUrl } from './seo';
+import { LocalCoordination } from './local-coordination';
 const services = [
     'Hospital & Clinic Selection',
     'Medical Coordination',
@@ -22,6 +23,8 @@ const organizationJsonLd = {
             url: canonicalUrl('/'),
             logo: canonicalUrl('/images/affordia-health-logo.png'),
             email: 'affordiahealth@gmail.com',
+            areaServed: { '@type': 'City', name: 'Shenyang', containedInPlace: { '@type': 'AdministrativeArea', name: 'Liaoning, China' } },
+            contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', email: 'affordiahealth@gmail.com', availableLanguage: 'English' },
             description: 'Access high-quality healthcare in China with professional coordination, flexible services and reliable local support.',
             address: {
                 '@type': 'PostalAddress',
@@ -66,6 +69,7 @@ export default function Home({ locale = 'en' }: {
         </div>
       </section>
 
+      <LocalCoordination locale={locale}/>
       <section className="service-preview">
         <article className="journey-card">
           <span className="round-icon">◎</span>

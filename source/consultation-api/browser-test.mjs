@@ -22,11 +22,14 @@ try {
   }
   await page.setViewportSize({width:390,height:844});
   const scenarios=[
-    {locale:'de',country:'Deutschland',service:'eye',contacts:[['whatsapp','+49 151 23456789'],['email','person@example.invalid']]},
-    {locale:'de',country:'Schweiz',service:'post-treatment',contacts:[['telephone','+41 44 555 01 02'],['whatsapp','+41 79 123 45 67'],['wechat','demo_wechat']]},
-    {locale:'es',country:'Canadá',service:'aesthetic',contacts:[['whatsapp','+1 416 555 0123']]},
-    {locale:'zh-CN',country:'Singapore',service:'unsure',contacts:[['email','person@example.invalid']]},
-    {locale:'en',country:'Germany',service:'medical',contacts:[['email','person@example.invalid']]},
+    {label:'premium specialist',locale:'de',country:'Deutschland',service:'eye',contacts:[['whatsapp','+49 151 23456789'],['email','person@example.invalid']]},
+    {label:'quality and price',locale:'de',country:'Schweiz',service:'post-treatment',contacts:[['telephone','+41 44 555 01 02'],['whatsapp','+41 79 123 45 67'],['wechat','demo_wechat']]},
+    {label:'entire journey budget',locale:'es',country:'Canadá',service:'aesthetic',contacts:[['whatsapp','+1 416 555 0123']]},
+    {label:'hospital contact only',locale:'zh-CN',country:'Singapore',service:'unsure',contacts:[['email','person@example.invalid']]},
+    {label:'online doctor information',locale:'en',country:'Germany',service:'medical',contacts:[['email','person@example.invalid']]},
+    {label:'insurance question',locale:'en',country:'Canada',service:'insurance',contacts:[['email','person@example.invalid']]},
+    {label:'non-medical local service',locale:'en',country:'USA',service:'other',contacts:[['email','person@example.invalid']]},
+    {label:'email-only contact',locale:'en',country:'Australia',service:'unsure',contacts:[['email','person@example.invalid']]},
   ];
   for(const scenario of scenarios){
     const prefix=scenario.locale==='en'?'':`/${scenario.locale}`;
@@ -34,7 +37,10 @@ try {
     const form=page.locator('.consultation-form');
     await form.locator('input[autocomplete="name"]').fill('Example Person');
     await form.locator('input[autocomplete="country-name"]').fill(scenario.country);
-    await form.locator(':scope > label > select').selectOption(scenario.service);
+    await form.locator(':scope > label > select').first().selectOption(scenario.service);
+    await form.locator(':scope > label > select').nth(1).selectOption('balance');
+    await form.locator(':scope > label > select').nth(2).selectOption('journey');
+    await form.locator(':scope > label > select').nth(3).selectOption('unsure');
     for(let i=0;i<scenario.contacts.length;i++){
       if(i) await form.locator(':scope > fieldset > button').click();
       const row=form.locator(':scope > fieldset > fieldset').nth(i);
@@ -42,13 +48,15 @@ try {
       await row.locator('input:not([type=radio])').fill(scenario.contacts[i][1]);
     }
     if(scenario.contacts.length>1) await form.locator(':scope > fieldset > fieldset').last().locator('input[type=radio]').check();
-    await form.locator('textarea').first().fill('I would like to understand the available coordination and travel options.');
+    await form.locator('textarea').first().fill(`Synthetic request: ${scenario.label}. Please explain the available options.`);
     await form.locator('textarea').last().fill('What are the next steps and likely costs?');
     await form.locator('input[type=checkbox]').check();
     const responsePromise=page.waitForResponse(r=>r.url()===`${base}/api/consultation` && r.request().method()==='POST');
     await form.locator('button[type=submit]').click();
     const response=await responsePromise; assert.equal(response.status(),201,scenario.locale);
     const submitted=response.request().postDataJSON(); assert.equal(submitted.contacts.length,scenario.contacts.length);
+    assert(submitted.help.includes(scenario.label));
+    assert.equal(submitted.priority,'balance'); assert.equal(submitted.budgetScope,'journey'); assert.equal(submitted.insurance,'unsure');
     assert.equal(submitted.contacts.filter(c=>c.preferred).length,1); assert.equal(submitted.contacts.find(c=>c.preferred).type,scenario.contacts[scenario.contacts.length-1][0]);
     const body=await response.json(); assert.equal(body.notification,'sent'); assert(body.reference);
     assert(await page.locator('.form-success').isVisible());
@@ -88,5 +96,5 @@ try {
   assert(await fallback.locator('a[href="mailto:affordiahealth@gmail.com"]').first().isVisible());
   await noJs.close();
   assert.deepEqual(errors,[]);
-  console.log('PASS: 7 widths x 4 routes x 4 locales, mobile menu, five browser journeys, validation and preserved inputs on network failure. Local in-memory storage; mocked notification.');
+  console.log('PASS: 7 widths x 4 routes x 4 locales, mobile menu, eight request scenarios plus empty form and mobile, validation and preserved inputs on network failure. Local in-memory storage; mocked notification.');
 } finally {await browser.close();}

@@ -2,9 +2,8 @@
 // the operational, privacy and security acceptance checks in README.md.
 const encoder = new TextEncoder();
 const services = new Set(['medical','eye','aesthetic','plastic','dental','screening','rehabilitation','post-treatment','travel','insurance','other','unsure']);
-const serviceLabels = { medical:'Medical treatment and hospital coordination', eye:'Eye care and vision surgery', aesthetic:'Cosmetic and aesthetic procedures', plastic:'Plastic surgery coordination', dental:'Dental care and implants', screening:'Preventive health screening', rehabilitation:'Rehabilitation and recovery', 'post-treatment':'Post-treatment and post-surgery rehabilitation', travel:'Travel, accommodation and medical logistics', insurance:'Insurance-related administrative assistance', other:'Other healthcare coordination', unsure:'Not sure - help me find the right option' };
+const serviceLabels = { medical:'Medical treatment and hospital coordination', eye:'Eye care and vision surgery', aesthetic:'Cosmetic and aesthetic procedures', plastic:'Plastic surgery coordination', dental:'Dental care and implants', screening:'Preventive health screening', rehabilitation:'Rehabilitation and recovery', 'post-treatment':'Post-treatment and post-surgery rehabilitation', travel:'Travel, accommodation and medical logistics', insurance:'Insurance-related administrative assistance', other:'Other — Tell Us What You Need', unsure:'Not sure - help me find the right option' };
 const locales = new Set(['en','de','es','zh-CN']);
-const prefixes = ['30','31','32','33','34','36','39','40','41','43','45','46','48','49','351','352','353','356','357','358','359','370','371','372','385','386','420','421'];
 const headers = { 'Content-Type': 'application/json; charset=utf-8', 'Cache-Control': 'no-store', 'X-Content-Type-Options': 'nosniff', 'X-Robots-Tag': 'noindex, nofollow', 'Referrer-Policy': 'no-referrer', 'Content-Security-Policy': "default-src 'none'; frame-ancestors 'none'" };
 const reply = (body, status = 200) => new Response(JSON.stringify(body), { status, headers });
 const b64 = bytes => btoa(String.fromCharCode(...bytes)).replaceAll('+','-').replaceAll('/','_').replace(/=+$/,'');
@@ -20,13 +19,15 @@ function validContact(c) {
   if (c.type === 'wechat') return value.length >= 2 && value.length <= 100 && !/[\r\n]/u.test(value);
   if (c.type !== 'whatsapp' && c.type !== 'telephone') return false;
   const phone = value.replace(/[\s().-]/g, '');
-  return /^\+[1-9]\d{4,14}$/.test(phone) && (c.type !== 'telephone' || prefixes.some(p => phone.startsWith(`+${p}`)));
+  return /^\+[1-9]\d{4,14}$/.test(phone);
 }
 function validPayload(x) {
   return x && typeof x === 'object' && typeof x.name === 'string' && x.name.trim().length >= 2 && x.name.length <= 120 &&
     typeof x.country === 'string' && x.country.trim().length >= 2 && x.country.length <= 100 && services.has(x.service) && locales.has(x.locale) &&
     typeof x.help === 'string' && x.help.length <= 6000 && typeof x.questions === 'string' && x.questions.length <= 6000 && x.privacy === true &&
     Array.isArray(x.contacts) && x.contacts.length > 0 && x.contacts.every(validContact) && x.contacts.filter(c => c.preferred).length === 1 &&
+    ['', 'expertise', 'balance', 'affordable', 'availability'].includes(x.priority ?? '') && typeof (x.budget ?? '') === 'string' && (x.budget ?? '').length <= 120 &&
+    ['', 'medical', 'journey', 'unsure'].includes(x.budgetScope ?? '') && ['', 'yes', 'no', 'unsure'].includes(x.insurance ?? '') &&
     typeof x.website === 'string' && x.website.length <= 200 && typeof x.token === 'string' && x.token.length <= 1000;
 }
 async function rate(env, bucket, now, limit) {
@@ -51,7 +52,7 @@ async function notify(env, reference, record) {
     if (!tokenResponse.ok) return false;
     const token = await tokenResponse.json(); if (typeof token.access_token !== 'string') return false;
     const contactLines = record.contacts.map((c, i) => `${i + 1}. ${c.type}${c.preferred ? ' (preferred)' : ''}: ${c.value}`).join('\r\n');
-    const message = `A consultation request was recorded.\r\nReference: ${reference}\r\n\r\nName: ${record.name}\r\nCountry: ${record.country}\r\nService: ${serviceLabels[record.service]}\r\nLanguage: ${record.locale}\r\n\r\nContact methods:\r\n${contactLines}\r\n\r\nHow can we help?\r\n${record.help || '(not provided)'}\r\n\r\nQuestions:\r\n${record.questions || '(not provided)'}\r\n\r\nPrivacy notice acknowledged: Yes\r\n`;
+    const message = `A consultation request was recorded.\r\nReference: ${reference}\r\n\r\nName: ${record.name}\r\nCountry: ${record.country}\r\nService: ${serviceLabels[record.service]}\r\nLanguage: ${record.locale}\r\nHealthcare priority: ${record.priority || '(not provided)'}\r\nEstimated budget: ${record.budget || '(not provided)'}\r\nBudget scope: ${record.budgetScope || '(not provided)'}\r\nInsurance: ${record.insurance || '(not provided)'}\r\n\r\nContact methods:\r\n${contactLines}\r\n\r\nHow can we help?\r\n${record.help || '(not provided)'}\r\n\r\nQuestions:\r\n${record.questions || '(not provided)'}\r\n\r\nPrivacy notice acknowledged: Yes\r\n`;
     const messageBase64 = btoa(String.fromCharCode(...encoder.encode(message))).match(/.{1,76}/g)?.join('\r\n') || '';
     const raw = b64(encoder.encode(`To: affordiahealth@gmail.com\r\nSubject: New Affordia Health consultation request\r\nMIME-Version: 1.0\r\nContent-Type: text/plain; charset=UTF-8\r\nContent-Transfer-Encoding: base64\r\n\r\n${messageBase64}\r\n`));
     const response = await fetch('https://gmail.googleapis.com/gmail/v1/users/me/messages/send', { method:'POST', redirect:'error', signal:AbortSignal.timeout(10000), headers:{ 'Content-Type':'application/json', 'Authorization':`Bearer ${token.access_token}` }, body:JSON.stringify({ raw }) });
@@ -110,7 +111,7 @@ async function handle(request, env) {
     env.DB.prepare('DELETE FROM used_tokens WHERE expires_at < ?').bind(now),
     env.DB.prepare('DELETE FROM rate_limits WHERE period < ?').bind(period-24)
   ]);
-  const record = {name:x.name.trim(),country:x.country.trim(),service:x.service,contacts:x.contacts.map(c=>({type:c.type,value:c.value.trim(),preferred:c.preferred})),help:x.help.trim(),questions:x.questions.trim(),privacy:true,locale:x.locale};
+  const record = {name:x.name.trim(),country:x.country.trim(),service:x.service,contacts:x.contacts.map(c=>({type:c.type,value:c.value.trim(),preferred:c.preferred})),help:x.help.trim(),questions:x.questions.trim(),priority:x.priority ?? '',budget:(x.budget ?? '').trim(),budgetScope:x.budgetScope ?? '',insurance:x.insurance ?? '',privacy:true,locale:x.locale};
   const payload=JSON.stringify(record); const hash=await sign(env.TOKEN_SECRET,payload);
   const existing=await env.DB.prepare('SELECT reference,payload_hash,notification FROM requests WHERE idempotency_key=?').bind(idem).first();
   if(existing) return existing.payload_hash===hash ? reply({reference:existing.reference,notification:existing.notification}) : reply({error:'idempotency_conflict'},409);
