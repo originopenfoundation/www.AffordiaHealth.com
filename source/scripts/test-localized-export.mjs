@@ -47,10 +47,9 @@ for (const url of urls) {
     documentBlocks += blocks.length;
   }
   if (canonicalPath === '/book-a-free-consultation/') {
-    assert(body.includes('class="consultation-form"'), `Missing consultation form: ${url}`);
-    assert(body.includes('type="email"') && body.includes('<textarea'), `Missing contact or question fields: ${url}`);
+    assert(!body.includes('class="consultation-form"'), `Unavailable consultation form must not be published: ${url}`);
     assert(body.includes('href="mailto:affordiahealth@gmail.com"'), `Missing accessible email fallback: ${url}`);
-    assert(!body.includes('https://mail.google.com/mail/'), `Gmail-specific contact remains: ${url}`);
+    assert(body.includes('https://mail.google.com/mail/'), `Missing Gmail compose alternative: ${url}`);
     assert(!body.includes('&amp;body=') && !body.includes('&body='), `Consultation email URL must not contain personal or health data: ${url}`);
   }
   assert(body.includes('<main id="main-content"'), `Missing main landmark: ${url}`);

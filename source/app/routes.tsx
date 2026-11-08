@@ -2,8 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Home from './home-page';
 import { ContentPage, CtaBand, SiteFooter, SiteHeader } from './site-components';
-import { ConsultationContact } from './consultation-form';
-import { formText } from './form-data';
+import { ConsultationEmailFallback } from './consultation-email-fallback';
 import { pages } from './site-data';
 import { menuGroups, pdfDocuments, pdfDocumentBySlug } from './pdf-library';
 import { translator } from './i18n/catalog';
@@ -46,7 +45,7 @@ export function RenderRoute({ locale, path }: { locale: Locale; path: string }) 
   const l = (href: string) => localizePath(locale, href);
   if (path === '/') return <Home locale={locale} />;
   if (path === '/book-a-free-consultation') {
-    return <><SiteHeader locale={locale} path={path} /><main id="main-content"><PageStructuredData locale={locale} path={path} title={t('Book a Free Consultation')} /><section className="consultation-page"><div className="consultation-intro"><p className="kicker">{t('Book a Free Consultation')}</p><h1>{t("Tell Us What You Need. Let's Explore Your Options.")}</h1><p>{t('Your first consultation with Affordia Health is free. You do not need to prepare extensive medical documentation or make any commitment before speaking with us.')}</p><p>{t('No commitment. No upfront payment. Start with a conversation.')}</p></div><ConsultationContact locale={locale} copy={Object.fromEntries(formText.map(text => [text, t(text)]))} /></section><SiteFooter locale={locale} /></main></>;
+    return <><SiteHeader locale={locale} path={path} /><main id="main-content"><PageStructuredData locale={locale} path={path} title={t('Book a Free Consultation')} /><section className="consultation-page"><div className="consultation-intro"><p className="kicker">{t('Book a Free Consultation')}</p><h1>{t("Tell Us What You Need. Let's Explore Your Options.")}</h1><p>{t('Your first consultation with Affordia Health is free. You do not need to prepare extensive medical documentation or make any commitment before speaking with us.')}</p><p>{t('No commitment. No upfront payment. Start with a conversation.')}</p></div><ConsultationEmailFallback locale={locale} /></section><SiteFooter locale={locale} /></main></>;
   }
   if (path === '/library') return <><SiteHeader locale={locale} path={path} /><main id="main-content"><PageStructuredData locale={locale} path={path} title={t('Explore Your Options')} />
     <section className="library-hero"><p className="kicker">{t('Affordia Health')}</p><h1>{t('Explore Your Options')}</h1><p>{t('Start with one service. Add only what you need.')}</p></section>
