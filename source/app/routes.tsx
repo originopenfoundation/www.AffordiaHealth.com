@@ -30,7 +30,8 @@ export function routeMetadata(locale: Locale, path: string): Metadata {
   else if (page) { heading = page.eyebrow; description = page.intro; }
   else if (slug === 'book-a-free-consultation') { heading = 'Book a Free Consultation'; description = "Tell Us What You Need. Let's Explore Your Options."; }
   else if (slug === 'library') { heading = 'Affordia Health Information'; description = 'Explore Affordia Health services, healthcare information, partner opportunities and important policies.'; }
-  const title = path === '/' ? `${t('Affordia Health')} | ${t('Affordable Healthcare Solutions Worldwide.')}` : `${t(heading)} | ${t('Affordia Health')}`;
+  const documentLabel = { en: 'Information', de: 'Informationen', es: 'Información', 'zh-CN': '资料' }[locale];
+  const title = path === '/' ? `${t('Affordia Health')} | ${t('Affordable Healthcare Solutions Worldwide.')}` : doc ? `${t(heading)} | ${documentLabel} | ${t('Affordia Health')}` : `${t(heading)} | ${t('Affordia Health')}`;
   const url = canonicalUrl(localizePath(locale, path));
   const languages = Object.fromEntries(locales.map(code => [code, canonicalUrl(localizePath(code, path))]));
   const image = path === '/' ? '/og.png' : page?.image?.replace('.webp', '.png');

@@ -24,7 +24,7 @@ const organizationJsonLd = {
             logo: canonicalUrl('/images/affordia-health-logo.png'),
             email: 'affordiahealth@gmail.com',
             areaServed: { '@type': 'City', name: 'Shenyang', containedInPlace: { '@type': 'AdministrativeArea', name: 'Liaoning, China' } },
-            contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', email: 'affordiahealth@gmail.com', availableLanguage: 'English' },
+            contactPoint: { '@type': 'ContactPoint', contactType: 'customer service', email: 'affordiahealth@gmail.com', availableLanguage: ['English', 'Chinese'] },
             description: 'Access high-quality healthcare in China with professional coordination, flexible services and reliable local support.',
             address: {
                 '@type': 'PostalAddress',

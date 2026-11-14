@@ -5,6 +5,9 @@ import { type SitePage } from './site-data';
 import { SiteNavigation } from './site-header';
 import { menuGroups } from './pdf-library';
 import { PageStructuredData } from './structured-data';
+import { CopyEmail } from './copy-email';
+import { SocialLink } from './social-link';
+import { FaqAdditions } from './faq-additions';
 export function SiteFooter({ locale = 'en' }: {
     locale?: Locale;
 }) {
@@ -36,6 +39,7 @@ export function SiteFooter({ locale = 'en' }: {
         <a href={l("/partner-network")}>{t("Partner Network")}</a>
         <a href={l("/about-us")}>{t("About Us")}</a>
         <a href={l("/contact")}>{t("Contact")}</a>
+        <SocialLink locale={locale}/>
       </div>
       <div>
         <h2>{t("Clear Roles. Clear Responsibilities.")}</h2>
@@ -95,6 +99,7 @@ export function ContentPage({ page: original, locale = 'en' }: {
             {section.quote && <blockquote>{section.quote}</blockquote>}
           </section>))}
       </div>
+      {page.slug === 'faq' && <FaqAdditions locale={locale}/>}
       {page.slug === 'contact' && <ContactPanel locale={locale}/>}
       <CtaBand locale={locale}/>
       <SiteFooter locale={locale}/>
@@ -106,7 +111,7 @@ function ContactPanel({ locale = 'en' }: {
     const t = translator(locale);
     return (<section className="contact-panel">
       <div><p className="kicker">{t("Contact")}</p><h2>{t("Start With a Conversation")}</h2><p>{t("You do not need to know exactly which service you need before contacting us. Tell us what you are trying to solve. We will listen first.")}</p></div>
-      <div className="contact-card"><h3>{t("Email")}</h3><a href="mailto:affordiahealth@gmail.com">{t("affordiahealth@gmail.com")}</a><h3>{t("Postal Address")}</h3><p>{t("Hromadu 819/19")}<br />{t("972 12 Nedo\u017Eery-Brezany")}<br />{t("Slovakia")}</p></div>
+      <div className="contact-card"><h3>{t("Email")}</h3><a href="mailto:affordiahealth@gmail.com">{t("affordiahealth@gmail.com")}</a><CopyEmail locale={locale}/><p><SocialLink locale={locale}/></p><h3>{t("Postal Address")}</h3><p>{t("Hromadu 819/19")}<br />{t("972 12 Nedo\u017Eery-Brezany")}<br />{t("Slovakia")}</p></div>
     </section>);
 }
 export function CtaBand({ locale = 'en' }: {
