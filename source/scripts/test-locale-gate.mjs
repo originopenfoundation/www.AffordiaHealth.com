@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';import {mkdtemp,writeFile,readFile,mkdir} from 'node:fs/promises';import {tmpdir} from 'node:os';import path from 'node:path';import {spawnSync} from 'node:child_process';import {createHash} from 'node:crypto';
+import {applicationSourceHash} from './locale-source-hash.mjs';
 const dir=await mkdtemp(path.join(tmpdir(),'affordia-locale-gate-'));const manifest=path.join(dir,'candidate.json');
 await writeFile(manifest,JSON.stringify({locale:'fr',ownerApproved:false}));
 let result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});
@@ -7,13 +8,38 @@ await writeFile(manifest,JSON.stringify({locale:'en',ownerApproved:true}));
 result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});
 assert.notEqual(result.status,0);assert(result.stderr.includes('Candidate must be a new valid locale'));
 const before=await readFile('app/i18n/source.json','utf8');const catalog=Object.fromEntries(JSON.parse(before).map(x=>[x.id,'synthetic test fixture']));await writeFile(path.join(dir,'catalog.json'),JSON.stringify(catalog));
-const manualHash=createHash('sha256');for(const file of ['faq-additions.tsx','local-coordination.tsx','consultation-email-fallback.tsx','copy-email.tsx']){manualHash.update(file+'\0');manualHash.update(await readFile(path.join('app',file)));}
-const candidate={locale:'fr',ownerApproved:true,specialistReviewed:true,contactSupportVerified:true,manualComponentsReviewed:true,reviewEvidence:'synthetic fixture only',canonicalSourceSha256:createHash('sha256').update(before).digest('hex'),manualSourceSha256:manualHash.digest('hex'),catalog:'catalog.json'};
+const candidate={locale:'fr',ownerApproved:true,specialistReviewed:true,contactSupportVerified:true,manualComponentsReviewed:true,reviewEvidence:'synthetic fixture only',canonicalSourceSha256:createHash('sha256').update(before).digest('hex'),applicationSourceSha256:await applicationSourceHash(),reviewedCatalogSha256:createHash('sha256').update(await readFile(path.join(dir,'catalog.json'))).digest('hex'),catalog:'catalog.json'};
 await writeFile(manifest,JSON.stringify(candidate));let xml='<urlset>';
 const baseline=await readFile('out/sitemap.xml','utf8');const english=[...baseline.matchAll(/<loc>([^<]+)<\/loc>/g)].map(x=>new URL(x[1]).pathname).filter(p=>!/^\/(de|es|zh-CN)\//.test(p));assert.equal(english.length,40);
-for(const segment of english){const url=`https://affordiahealth.com/fr${segment}`;xml+=`<url><loc>${url}</loc></url>`;const folder=path.join(dir,'fr','.'+segment);await mkdir(folder,{recursive:true});await writeFile(path.join(folder,'index.html'),`<link rel="canonical" href="${url}"><link hrefLang="x-default"><main id="main-content">synthetic fixture</main>`);}
+const alternateTags=(locale,segment)=>[...['en','de','es','zh-CN',locale].map(code=>`<link rel="alternate" hrefLang="${code}" href="https://affordiahealth.com${code==='en'?'':`/${code}`}${segment}">`),`<link rel="alternate" hrefLang="x-default" href="https://affordiahealth.com${segment}">`].join('');
+async function writeExistingVariants(locale){for(const segment of english)for(const code of ['en','de','es','zh-CN']){const folder=path.join(dir,code==='en'?'':code,'.'+segment);await mkdir(folder,{recursive:true});await writeFile(path.join(folder,'index.html'),`<html>${alternateTags(locale,segment)}</html>`);}}
+await writeExistingVariants('fr');
+for(const segment of english){const url=`https://affordiahealth.com/fr${segment}`;xml+=`<url><loc>${url}</loc></url>`;const folder=path.join(dir,'fr','.'+segment);await mkdir(folder,{recursive:true});await writeFile(path.join(folder,'index.html'),`<html lang="fr" dir="ltr"><link rel="canonical" href="${url}">${alternateTags('fr',segment)}<main id="main-content">synthetic fixture</main></html>`);}
 await writeFile(path.join(dir,'sitemap.xml'),xml+'</urlset>');
 result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);
+const firstPage=path.join(dir,'fr','index.html');const original=await readFile(firstPage,'utf8');
+await writeFile(firstPage,original.replace('lang="fr"','lang="en"'));
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Missing document language'));
+await writeFile(firstPage,original.replace('dir="ltr"','dir="rtl"'));
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Incorrect document direction'));
+await writeFile(firstPage,original);
+await writeFile(firstPage,original.replace('hrefLang="de"','hrefLang="wrong"'));
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Missing or incorrect de alternate'));
+await writeFile(firstPage,original);
+const existingPage=path.join(dir,'de','index.html');const originalExisting=await readFile(existingPage,'utf8');await writeFile(existingPage,originalExisting.replace('hrefLang="fr"','hrefLang="wrong"'));
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Missing reciprocal fr alternate'));
+await writeFile(existingPage,originalExisting);
+await writeFile(path.join(dir,'catalog.json'),JSON.stringify({...catalog,[JSON.parse(before)[0].id]:'changed after review'}));
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Catalog changed after review'));
+await writeFile(path.join(dir,'catalog.json'),JSON.stringify(catalog));
+const arabic={...candidate,locale:'ar'};await writeFile(manifest,JSON.stringify(arabic));let arabicXml='<urlset>';
+await writeExistingVariants('ar');
+for(const segment of english){const url=`https://affordiahealth.com/ar${segment}`;arabicXml+=`<url><loc>${url}</loc></url>`;const folder=path.join(dir,'ar','.'+segment);await mkdir(folder,{recursive:true});await writeFile(path.join(folder,'index.html'),`<html lang="ar" dir="rtl"><link rel="canonical" href="${url}">${alternateTags('ar',segment)}<main id="main-content">synthetic fixture</main></html>`);}
+await writeFile(path.join(dir,'sitemap.xml'),arabicXml+'</urlset>');
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.equal(result.status,0,result.stderr);
+const arabicPage=path.join(dir,'ar','index.html');const originalArabic=await readFile(arabicPage,'utf8');await writeFile(arabicPage,originalArabic.replace('dir="rtl"','dir="ltr"'));
+result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Incorrect document direction'));
+await writeFile(path.join(dir,'sitemap.xml'),xml+'</urlset>');
 candidate.canonicalSourceSha256='stale';await writeFile(manifest,JSON.stringify(candidate));
 result=spawnSync(process.execPath,['scripts/check-locale-candidate.mjs',manifest,dir],{encoding:'utf8'});assert.notEqual(result.status,0);assert(result.stderr.includes('Canonical source changed'));
-console.log('PASS: synthetic structural fixture accepted; unapproved, already-live and stale-source candidates rejected. No real locale approved or published.');
+console.log('PASS: synthetic fixture accepted; unapproved, live, stale source, altered catalog, incorrect direction, broken alternate and nonreciprocal hreflang rejected. No real locale approved or published.');
