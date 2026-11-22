@@ -10,6 +10,17 @@ const skipLabels: Record<Locale, string> = {
   de: 'Zum Inhalt springen',
   es: 'Saltar al contenido',
   'zh-CN': '跳至主要内容',
+
+ "ru": "Перейти к содержимому",
+ "ar": "انتقل إلى المحتوى",
+ "fr": "Passer au contenu",
+ "bn": "বিষয়বস্তু এড়িয়ে যান",
+ "hi": "सामग्री पर जाएं",
+ "pt-BR": "Pular para o conteúdo",
+ "id": "Lewati ke konten",
+ "ko": "콘텐츠로 건너뛰기",
+ "ja": "コンテンツにスキップ",
+ "vi": "Chuyển đến nội dung"
 };
 
 export function SiteNavigation({ locale, path, groups, copy }: { locale: Locale; path: string; groups: NavigationGroup[]; copy: HeaderCopy }) {

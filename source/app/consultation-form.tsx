@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
 import type { Locale } from './i18n/locale';
 import { localizePath } from './i18n/locale';
-import { consultationCopy, contactTypes, serviceIds, extraConsultationCopy } from './consultation-copy';
+import { consultationCopy, contactTypes, serviceIds, extraConsultationCopy, preferredLanguages, formRequirements } from './consultation-copy';
 
 type ContactType = (typeof contactTypes)[number];
 type Contact = { id: number; type: ContactType; value: string };
@@ -15,9 +15,10 @@ function validContact(type: ContactType, input: string) {
   return /^\+[1-9]\d{4,14}$/.test(phone);
 }
 
-export function ConsultationContact({ locale }: { copy: Record<string, string>; locale: Locale }) {
+export function ConsultationContact({ locale }: { locale: Locale }) {
   const t = consultationCopy[locale];
   const extra = extraConsultationCopy[locale];
+  const requirement = formRequirements[locale];
   const [name, setName] = useState('');
   const [country, setCountry] = useState('');
   const [service, setService] = useState<string>('unsure');
@@ -25,6 +26,7 @@ export function ConsultationContact({ locale }: { copy: Record<string, string>; 
   const [preferred, setPreferred] = useState(1);
   const [help, setHelp] = useState('');
   const [questions, setQuestions] = useState('');
+  const [preferredLanguage, setPreferredLanguage] = useState<string>(locale);
   const [priority, setPriority] = useState('');
   const [budget, setBudget] = useState('');
   const [budgetScope, setBudgetScope] = useState('');
@@ -48,9 +50,9 @@ export function ConsultationContact({ locale }: { copy: Record<string, string>; 
     event.preventDefault();
     if (state !== 'idle') return;
     setAttempted(true);
-    if (name.trim().length < 2 || country.trim().length < 2 || !privacy || !contacts.length) { setError(t.required); return; }
+    if (!name.trim() || !country.trim() || !help.trim() || !questions.trim() || !privacy || !contacts.length) { setError(requirement.detailsRequired); return; }
     if (!contacts.some(c => c.id === preferred) || contacts.some(c => !validContact(c.type, c.value))) { setError(t.contactError); return; }
-    const values = { name: name.trim(), country: country.trim(), service, contacts: contacts.map(c => ({ type: c.type, value: c.value.trim(), preferred: c.id === preferred })), help: help.trim(), questions: questions.trim(), priority, budget: budget.trim(), budgetScope, insurance, privacy, locale, website };
+    const values = { name: name.trim(), country: country.trim(), service, contacts: contacts.map(c => ({ type: c.type, value: c.value.trim(), preferred: c.id === preferred })), help: help.trim(), questions: questions.trim(), preferredLanguage, priority, budget: budget.trim(), budgetScope, insurance, privacy, locale, website };
     const payload = JSON.stringify(values);
     if (!submission.current || submission.current.payload !== payload) submission.current = { payload, key: crypto.randomUUID() };
     setError(''); setState('sending');
@@ -74,7 +76,7 @@ export function ConsultationContact({ locale }: { copy: Record<string, string>; 
         setError(response.status === 429 ? t.rate : response.status === 403 ? t.suspicious : t.unavailable);
         setState('idle'); return;
       }
-      setResult({ reference: data.reference, notified: data.notification === 'sent' }); setState('sent');
+      setResult({ reference: data.reference, notified: data.notification === 'provider_accepted' }); setState('sent');
     } catch { setError(t.unavailable); setState('idle'); }
   }
 
@@ -85,18 +87,19 @@ export function ConsultationContact({ locale }: { copy: Record<string, string>; 
     <form className="consultation-form" onSubmit={submit} noValidate>
       {error && <div ref={errorRef} role="alert" tabIndex={-1} className="form-error">{error}</div>}
       <p>{t.requiredHint}</p>
-      <label>{t.name} * <input autoComplete="name" required aria-invalid={attempted && name.trim().length < 2} maxLength={120} value={name} onChange={e => setName(e.target.value)} /></label>
-      <label>{t.country} * <input autoComplete="country-name" required aria-invalid={attempted && country.trim().length < 2} maxLength={100} value={country} onChange={e => setCountry(e.target.value)} /></label>
-      <label>{t.service} <select value={service} onChange={e => setService(e.target.value)}>{serviceIds.map((id, i) => <option key={id} value={id}>{id === 'other' ? extra.other : t.services[i]}</option>)}</select><span className="selected-service" aria-hidden="true">{service === 'other' ? extra.other : t.services[serviceIds.indexOf(service as (typeof serviceIds)[number])]}</span></label>
+      <label>{t.name} * <input autoComplete="name" required aria-invalid={attempted && !name.trim()} maxLength={120} value={name} onChange={e => setName(e.target.value)} /></label>
+      <label>{t.country} * <input autoComplete="country-name" required aria-invalid={attempted && !country.trim()} maxLength={100} value={country} onChange={e => setCountry(e.target.value)} /></label>
+      <label>{t.service} <select value={service} onChange={e => setService(e.target.value)}>{serviceIds.map((id, i) => <option key={id} value={id}>{id === 'other' ? extra.other : id === 'local' ? requirement.local : id === 'remote' ? requirement.remote : t.services[i]}</option>)}</select></label>
+      <label>{requirement.language} * <select required value={preferredLanguage} onChange={e => setPreferredLanguage(e.target.value)}>{preferredLanguages.map(([code,label])=><option key={code} value={code}>{label}</option>)}</select><span>{requirement.languageNotice}</span></label>
       <fieldset><legend>{t.contacts}</legend>{contacts.map((contact, index) => <fieldset key={contact.id}><legend>{t.contact} {index + 1}</legend>
         <label>{t.type}<select value={contact.type} onChange={e => setContacts(cs => cs.map(c => c.id === contact.id ? { ...c, type: e.target.value as ContactType } : c))}>{contactTypes.map((type, i) => <option value={type} key={type}>{t.methods[i]}</option>)}</select></label>
         <label>{t.value} *<input required aria-invalid={attempted && !validContact(contact.type, contact.value)} maxLength={254} type={contact.type === 'email' ? 'email' : 'text'} inputMode={contact.type === 'whatsapp' || contact.type === 'telephone' ? 'tel' : undefined} value={contact.value} onChange={e => setContacts(cs => cs.map(c => c.id === contact.id ? { ...c, value: e.target.value } : c))} /></label>
         <label className="inline-check"><input type="radio" name="preferred" checked={preferred === contact.id} onChange={() => setPreferred(contact.id)} /> {t.preferred}</label>
         {contacts.length > 1 && <button type="button" className="text-button" onClick={() => { const remaining = contacts.filter(c => c.id !== contact.id); setContacts(remaining); if (preferred === contact.id) setPreferred(remaining[0].id); setAnnouncement(`${t.remove} ${remaining.length}`); }}>{t.remove}</button>}
-      </fieldset>)}<button type="button" className="text-button" onClick={() => { const id = nextId.current++; setContacts(cs => [...cs, { id, type: 'email', value: '' }]); setAnnouncement(`${t.add} ${id}`); }}>{t.add}</button><span className="sr-only" aria-live="polite">{announcement}</span></fieldset>
+      </fieldset>)}<button type="button" className="text-button" disabled={contacts.length>=50} onClick={() => { if(contacts.length>=50)return; const id = nextId.current++; setContacts(cs => [...cs, { id, type: 'email', value: '' }]); setAnnouncement(`${t.add} ${id}`); }}>{t.add}</button><span>{requirement.contactLimit}</span><span className="sr-only" aria-live="polite">{announcement}</span></fieldset>
       <p>{t.prompts}</p>
-      <label>{t.help} ({t.optional})<textarea maxLength={6000} value={help} onChange={e => setHelp(e.target.value)} /></label>
-      <label>{t.questions} ({t.optional})<textarea maxLength={6000} value={questions} onChange={e => setQuestions(e.target.value)} /></label>
+      <label>{t.help} *<textarea required aria-invalid={attempted && !help.trim()} maxLength={6000} value={help} onChange={e => setHelp(e.target.value)} /></label>
+      <label>{t.questions} *<textarea required aria-invalid={attempted && !questions.trim()} maxLength={6000} value={questions} onChange={e => setQuestions(e.target.value)} /></label>
       <label>{extra.priority}<select value={priority} onChange={e => setPriority(e.target.value)}>{['', 'expertise', 'balance', 'affordable', 'availability'].map((value, i) => <option key={value} value={value}>{extra.priorities[i]}</option>)}</select></label>
       <label>{extra.budget}<input maxLength={120} value={budget} onChange={e => setBudget(e.target.value)} /></label>
       <label>{extra.scope}<select value={budgetScope} onChange={e => setBudgetScope(e.target.value)}>{['', 'medical', 'journey', 'unsure'].map((value, i) => <option key={value} value={value}>{extra.scopes[i]}</option>)}</select></label>

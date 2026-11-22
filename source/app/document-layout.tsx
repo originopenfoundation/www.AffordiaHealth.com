@@ -60,7 +60,7 @@ export function DocumentLayout({
   children: React.ReactNode; locale: Locale;
 }>) {
   return (
-    <html lang={locale}>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

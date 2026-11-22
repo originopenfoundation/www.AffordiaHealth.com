@@ -1,6 +1,8 @@
-# Localization release gate - Build 09 preparation
+# Localization release notes and historical preparation
 
-The owner requested Russian, Arabic, French, Bengali, Hindi, Brazilian Portuguese, Indonesian, Korean, Japanese and Vietnamese in addition to the four existing languages. The live site remains EN, DE, ES and Simplified Chinese, with 40 pages each. The ten requested additions remain inactive until ready.
+The owner requested publication of Russian, Arabic, French, Bengali, Hindi, Brazilian Portuguese, Indonesian, Korean, Japanese and Vietnamese, in addition to English, German, Spanish and Simplified Chinese. This release contains 40 pages per language. The owner approved publication after being informed that the drafts received partial AI-assisted review and have not received complete qualified human medical, legal or privacy review. Do not represent these translations as professionally certified; further specialist review remains outstanding.
+
+The preparation checklist below is historical. The candidate gate and scaffold scripts are designed for inactive locales and are not current release acceptance tests for the now-active languages.
 
 1. Preserve the requested list and the owner's confirmed customer-support languages: English and Chinese. The language selector must not imply that support is available in other languages.
 2. For each approved language, create a separate unpublished catalog for every canonical source entry (`app/i18n/source.json`) and translate all manually maintained content such as `faq-additions.tsx`, `local-coordination.tsx`, contact fallback, copy controls and structured business information. Do not put private inquiries through unapproved translation services.

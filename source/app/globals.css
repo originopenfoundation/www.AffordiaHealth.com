@@ -371,3 +371,15 @@ main { min-height: 100vh; padding: 18px clamp(16px, 2.5vw, 34px) 34px; }
 .hero-copy h2, .home-feature-steps span, .content-grid article > span, .library-links b, .mobile-menu section h2 { color: #805000; }
 .button-secondary { color: #805000; }
 .cta-band .kicker { color: #ffe8b0; }
+
+/* Review build: allow translated names and long words to fit narrow screens. */
+.footer-lockup { max-width: 100%; white-space: normal; }
+.footer-lockup .brand-copy strong { overflow-wrap: anywhere; }
+.site-footer > * { min-width: 0; }
+.document-page h1, .document-page h2, .document-page p { overflow-wrap: anywhere; }
+.service-panel { min-width: 0; }
+@media (max-width: 600px) {
+  .home-hero, .site-footer { grid-template-columns: minmax(0, 1fr); }
+  .hero-copy, .hero-collage { min-width: 0; }
+  .hero-copy h1, .hero-copy h2, .button { overflow-wrap: anywhere; }
+}

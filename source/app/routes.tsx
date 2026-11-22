@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import Home from './home-page';
 import { ContentPage, CtaBand, SiteFooter, SiteHeader } from './site-components';
 import { ConsultationEmailFallback } from './consultation-email-fallback';
+import { ConsultationContact } from './consultation-form';
 import { pages } from './site-data';
 import { menuGroups, pdfDocuments, pdfDocumentBySlug } from './pdf-library';
 import { translator } from './i18n/catalog';
@@ -30,13 +31,13 @@ export function routeMetadata(locale: Locale, path: string): Metadata {
   else if (page) { heading = page.eyebrow; description = page.intro; }
   else if (slug === 'book-a-free-consultation') { heading = 'Book a Free Consultation'; description = "Tell Us What You Need. Let's Explore Your Options."; }
   else if (slug === 'library') { heading = 'Affordia Health Information'; description = 'Explore Affordia Health services, healthcare information, partner opportunities and important policies.'; }
-  const documentLabel = { en: 'Information', de: 'Informationen', es: 'Información', 'zh-CN': '资料' }[locale];
+  const documentLabel = { en:'Information', de:'Informationen', es:'Información', 'zh-CN':'资料', ru:'Информация', ar:'معلومات', fr:'Informations', bn:'তথ্য', hi:'जानकारी', 'pt-BR':'Informações', id:'Informasi', ko:'정보', ja:'情報', vi:'Thông tin' }[locale];
   const title = path === '/' ? `${t('Affordia Health')} | ${t('Affordable Healthcare Solutions Worldwide.')}` : doc ? `${t(heading)} | ${documentLabel} | ${t('Affordia Health')}` : slug === 'affordia-care' && page ? `${t(heading)} | ${t(page.title)} | ${t('Affordia Health')}` : `${t(heading)} | ${t('Affordia Health')}`;
   const url = canonicalUrl(localizePath(locale, path));
   const languages = Object.fromEntries(locales.map(code => [code, canonicalUrl(localizePath(code, path))]));
   const image = path === '/' ? '/og.png' : page?.image?.replace('.webp', '.png');
   return { title, applicationName: t('Affordia Health'), description: t(description), alternates: { canonical: url, languages: { ...languages, 'x-default': languages.en } },
-    openGraph: { title, description: t(description), url, siteName: t('Affordia Health'), locale: { en: 'en_US', de: 'de_DE', es: 'es_ES', 'zh-CN': 'zh_CN' }[locale], type: doc ? 'article' : 'website', images: image ? [image] : [] },
+    openGraph: { title, description: t(description), url, siteName: t('Affordia Health'), locale: { en:'en_US', de:'de_DE', es:'es_ES', 'zh-CN':'zh_CN', ru:'ru_RU', ar:'ar_SA', fr:'fr_FR', bn:'bn_BD', hi:'hi_IN', 'pt-BR':'pt_BR', id:'id_ID', ko:'ko_KR', ja:'ja_JP', vi:'vi_VN' }[locale], type: doc ? 'article' : 'website', images: image ? [image] : [] },
     twitter: { card: image ? 'summary_large_image' : 'summary', title, description: t(description), images: image ? [image] : [] },
   };
 }
@@ -46,7 +47,7 @@ export function RenderRoute({ locale, path }: { locale: Locale; path: string }) 
   const l = (href: string) => localizePath(locale, href);
   if (path === '/') return <Home locale={locale} />;
   if (path === '/book-a-free-consultation') {
-    return <><SiteHeader locale={locale} path={path} /><main id="main-content"><PageStructuredData locale={locale} path={path} title={t('Book a Free Consultation')} /><section className="consultation-page"><div className="consultation-intro"><p className="kicker">{t('Book a Free Consultation')}</p><h1>{t("Tell Us What You Need. Let's Explore Your Options.")}</h1><p>{t('Your first consultation with Affordia Health is free. You do not need to prepare extensive medical documentation or make any commitment before speaking with us.')}</p><p>{t('No commitment. No upfront payment. Start with a conversation.')}</p></div><ConsultationEmailFallback locale={locale} /></section><SiteFooter locale={locale} /></main></>;
+    return <><SiteHeader locale={locale} path={path} /><main id="main-content"><PageStructuredData locale={locale} path={path} title={t('Book a Free Consultation')} /><section className="consultation-page"><div className="consultation-intro"><p className="kicker">{t('Book a Free Consultation')}</p><h1>{t("Tell Us What You Need. Let's Explore Your Options.")}</h1><p>{t('Your first consultation with Affordia Health is free. You do not need to prepare extensive medical documentation or make any commitment before speaking with us.')}</p><p>{t('No commitment. No upfront payment. Start with a conversation.')}</p></div>{process.env.AFFORDIA_FORM_PREVIEW === '1' ? <ConsultationContact locale={locale} /> : <ConsultationEmailFallback locale={locale} />}</section><SiteFooter locale={locale} /></main></>;
   }
   if (path === '/library') return <><SiteHeader locale={locale} path={path} /><main id="main-content"><PageStructuredData locale={locale} path={path} title={t('Explore Your Options')} />
     <section className="library-hero"><p className="kicker">{t('Affordia Health')}</p><h1>{t('Explore Your Options')}</h1><p>{t('Start with one service. Add only what you need.')}</p></section>

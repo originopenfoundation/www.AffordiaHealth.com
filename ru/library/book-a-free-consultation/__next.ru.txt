@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[1159,[],""]
+3:I[5579,[],""]
+:HL["/_next/static/css/23aeed3a6c91510a.css","style"]
+:HL["/_next/static/css/6470fbd64b15ef8a.css","style"]
+0:{"rsc":["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/23aeed3a6c91510a.css","precedence":"next"}],["$","link","1",{"rel":"stylesheet","href":"/_next/static/css/6470fbd64b15ef8a.css","precedence":"next"}]],["$","html",null,{"lang":"ru","dir":"ltr","children":["$","body",null,{"className":"__variable_8eaea4 __variable_8c25df antialiased","children":[["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}],["$","script",null,{"async":true,"type":"module","src":"https://static.cloudflareinsights.com/beacon.min.js","data-cf-beacon":"{\"token\":\"f0205897117b464ca80e1c8dda859654\"}"}]]}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"kRxWVeOfHKzcPm_STZsWz"}
